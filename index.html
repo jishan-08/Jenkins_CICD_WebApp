@@ -3,16 +3,212 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jenkins CI/CD Demo</title>
+
+    <title>Organization Portal</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Welcome to Jenkins CI/CD - Updated</h1>
-    <p>This web application is deployed using Jenkins.</p>
+    <div class="container">
 
-    <button onclick="showMessage()">Click Me</button>
+        <!-- Left Section -->
+        <div class="welcome-section">
+
+            <div class="logo">
+                <div class="logo-icon">O</div>
+                <span>Organization</span>
+            </div>
+
+            <div class="welcome-content">
+
+                <p class="tagline">EMPLOYEE PORTAL</p>
+
+                <h1>
+                    Welcome to your
+                    <span>workspace.</span>
+                </h1>
+
+                <p class="description">
+                    Access your projects, tasks, reports and
+                    organization resources from one secure portal.
+                </p>
+
+                <div class="features">
+
+                    <div class="feature">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <strong>Manage Projects</strong>
+                            <p>Track your work and project progress.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <strong>Team Collaboration</strong>
+                            <p>Stay connected with your team.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <div class="feature-icon">✓</div>
+                        <div>
+                            <strong>Secure Access</strong>
+                            <p>Your organization data stays protected.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                © 2026 Organization Portal. All rights reserved.
+            </div>
+
+        </div>
+
+
+        <!-- Right Section -->
+        <div class="login-section">
+
+            <div class="login-card">
+
+                <div class="mobile-logo">
+                    <div class="logo-icon">O</div>
+                    <span>Organization</span>
+                </div>
+
+                <h2>Sign in</h2>
+
+                <p class="login-subtitle">
+                    Sign in to continue to your account
+                </p>
+
+
+                <form id="loginForm">
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="employee@organization.com"
+                            required
+                        >
+
+                        <small id="emailError"></small>
+
+                    </div>
+
+
+                    <!-- Password -->
+                    <div class="form-group">
+
+                        <div class="password-label">
+
+                            <label for="password">
+                                Password
+                            </label>
+
+                            <a href="#" id="forgotPassword">
+                                Forgot password?
+                            </a>
+
+                        </div>
+
+                        <div class="password-box">
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Enter your password"
+                                required
+                                minlength="6"
+                            >
+
+                            <button
+                                type="button"
+                                id="togglePassword"
+                                class="eye-button"
+                            >
+                                Show
+                            </button>
+
+                        </div>
+
+                        <small id="passwordError"></small>
+
+                    </div>
+
+
+                    <!-- Remember -->
+                    <div class="remember-row">
+
+                        <label class="remember">
+
+                            <input
+                                type="checkbox"
+                                id="remember"
+                            >
+
+                            <span>Remember me</span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- Login -->
+                    <button
+                        type="submit"
+                        class="login-button"
+                    >
+                        <span id="buttonText">Sign In</span>
+                    </button>
+
+                </form>
+
+
+                <div
+                    id="message"
+                    class="message"
+                ></div>
+
+
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+
+
+                <button
+                    class="secondary-button"
+                    id="demoLogin"
+                >
+                    Try Demo Login
+                </button>
+
+
+                <p class="help-text">
+                    Need help?
+                    <a href="#">Contact IT Support</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
