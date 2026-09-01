@@ -38,7 +38,9 @@ pipeline {
 
                 bat 'if not exist "%DEPLOY_DIR%" mkdir "%DEPLOY_DIR%"'
 
-                bat 'xcopy /Y /E index.html style.css script.js "%DEPLOY_DIR%\\"'
+                bat 'copy /Y index.html "%DEPLOY_DIR%\\"'
+                bat 'copy /Y style.css "%DEPLOY_DIR%\\"'
+                bat 'copy /Y script.js "%DEPLOY_DIR%\\"'
             }
         }
     }
